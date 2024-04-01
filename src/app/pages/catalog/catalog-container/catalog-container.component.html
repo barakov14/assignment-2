@@ -1,0 +1,7 @@
+@if(catalog$ | async; as catalog) {
+  <app-catalog-list
+    [catalog]="catalog"
+  ></app-catalog-list>
+} @else {
+  <p>loading...</p>
+}
